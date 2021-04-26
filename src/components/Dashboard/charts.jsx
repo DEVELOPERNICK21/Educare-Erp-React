@@ -75,7 +75,7 @@ const Charts = () =>
                   dataSource={dataSource}
           />
         </div>
-        <div className="second-part">
+        {/* <div className="second-part">
             <ReactFusioncharts
                   type="doughnut2d"
                   width="100%"
@@ -83,7 +83,7 @@ const Charts = () =>
                   dataFormat="JSON"
                   dataSource={dataSource}
           />
-        </div>
+        </div> */}
 
     </div>
   );

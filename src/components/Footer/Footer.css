@@ -1,0 +1,19 @@
+footer {
+  height: 3rem;
+
+  width: 100%;
+
+  /* position: fixed; */
+
+  left: 0;
+
+  bottom: 0;
+
+  background: #fff;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}

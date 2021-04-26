@@ -1,0 +1,109 @@
+.profile_area {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+.upper_area {
+  position: inherit;
+
+  min-width: 100%;
+
+  min-height: 13rem;
+
+  display: flex;
+
+  border-bottom: 2px solid #ccc;
+
+  background: #fff;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  justify-content: center;
+}
+
+.down_area {
+  position: inherit;
+
+  min-width: 100%;
+
+  padding: 2rem;
+
+  min-height: 100vh;
+
+  margin-left: 10rem;
+
+  display: flex;
+
+  flex-direction: row;
+
+  background: #fff;
+}
+
+.right_area {
+  display: flex;
+
+  background: #feffff;
+
+  border-right: 2px solid #ccc;
+
+  width: 30%;
+
+  flex-wrap: wrap;
+
+  padding: 3rem;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  margin-left: 25px;
+
+  /* justify-content: center; */
+}
+
+.left_area {
+  display: flex;
+
+  background: #fff;
+
+  width: 70%;
+
+  color: rgb(71, 71, 71);
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.profileName {
+  display: inline-block;
+
+  color: rgb(71, 71, 71);
+
+  margin-top: -3px;
+}
+
+.right_area img {
+  border-radius: 50%;
+}

@@ -1,0 +1,81 @@
+/* * {
+  box-sizing: border-box;
+
+  padding: 0;
+
+  margin: 0;
+
+  font-family: "Josefin Sans", "Arial Narrow", Arial, sans-serif;
+} */
+
+/* main {
+  display: grid;
+
+  height: 22vh;
+
+  width: 52vh;
+
+  box-shadow: #45a049;
+
+  border: 2px solid #ffeeee;
+
+  border-radius: 25px;
+  margin-top: 30px;
+
+  margin-left: 68vh;
+} */
+
+.main_note {
+  background-color: rgb(247, 248, 248);
+
+  border-radius: 25px;
+
+  display: block;
+
+  color: aliceblue;
+
+  text-align: center;
+
+  align-items: center;
+
+  justify-content: baseline;
+
+  padding: 2px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input,
+textarea:hover {
+  background-color: rgb(253, 254, 255);
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

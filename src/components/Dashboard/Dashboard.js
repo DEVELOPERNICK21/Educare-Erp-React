@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import Calenders from '../Calender/Calendar';
+import Header from '../Header/Header';
+// import Keep from '../Keep/keep';
+// import TodoMaterial from '../Todo/ToDo_Material';
 import Cards from './Cards';
 import Charts from './charts';
 import './Dashboard.css'
@@ -20,11 +23,12 @@ const Dashboard = () =>
 
                 <div  className="First-row-cards">
                    <Cards />
+                   {/* <TodoMaterial /> */}
                 </div>
 
                 <div className="secod-row">
                     <div className='charts'>
-                        <Charts />
+                        {/* <Charts /> */}
                     </div>
                     <div className='calender'>
                         <Calenders  />
@@ -33,7 +37,8 @@ const Dashboard = () =>
 
 
                 <div className="Third-row">
-                    <Graphs />
+                    {/* <Graphs /> */}
+                    {/* <Keep /> */}
                 </div>
 
             <div style={{ marginTop: 90, display: 'flex' }}>

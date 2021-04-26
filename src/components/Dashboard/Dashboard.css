@@ -4,15 +4,44 @@
 
 .dashboard {
   height: 100%;
+
   width: 97%;
+
   margin-left: 2rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
 }
 
 .secod-row {
   display: flex;
+
   flex-direction: row;
+
   justify-content: center;
+
   /* align-items: center; */
+
   height: 400px;
+
   width: 33%;
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .First-row-cards {
+    display: flex;
+
+    flex-direction: column-reverse;
+
+    flex-wrap: wrap;
+  }
 }

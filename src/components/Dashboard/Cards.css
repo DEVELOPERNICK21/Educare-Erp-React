@@ -1,4 +1,9 @@
 main {
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
   margin-top: 1.4rem;
   padding: 2rem 0.2rem;
   background: #f1f5f9;
@@ -7,7 +12,9 @@ main {
 }
 
 .cards {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   grid-template-columns: repeat(4, 1fr); /* Important */
   grid-gap: 2rem;
   margin-top: 1rem;
@@ -15,6 +22,7 @@ main {
 
 .card-single {
   display: flex;
+  width: 20rem;
   justify-content: space-between;
   background: #fff;
   padding: 2rem;
@@ -45,4 +53,12 @@ main {
 .card-single:last-child div :last-child span,
 .card-single:last-child h1 {
   color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .cards {
+    display: flex;
+
+    flex-direction: column;
+  }
 }

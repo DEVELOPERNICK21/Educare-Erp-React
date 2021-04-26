@@ -1,0 +1,71 @@
+.show_main {
+  margin: 6rem 5rem 5rem 5rem;
+
+  padding: 1rem;
+
+  height: 12rem;
+
+  width: 20rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  border-radius: 0.5rem;
+
+  box-shadow: 25rem snow #000;
+  background-color: rgb(185, 227, 255);
+}
+
+.show_title {
+  height: 2.5rem;
+
+  width: 95%;
+
+  padding: 1rem;
+
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
+}
+
+.show_notes {
+  height: 3rem;
+
+  width: 95%;
+
+  font-size: 1.1rem;
+
+  padding: 1rem;
+
+  margin: -1rem 0.2rem 1rem 0.2rem;
+
+  justify-content: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
+}
+
+.my-class-name {
+  color: rgb(0, 0, 0);
+}
+
+.but {
+  /* margin-left: 9rem; */
+  display: flex;
+
+  flex-direction: row-reverse;
+
+  margin-right: 1rem;
+}
