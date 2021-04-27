@@ -22,7 +22,7 @@ main {
 
 .card-single {
   display: flex;
-  width: 20rem;
+  width: 18rem;
   justify-content: space-between;
   background: #fff;
   padding: 2rem;

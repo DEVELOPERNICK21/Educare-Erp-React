@@ -6,14 +6,22 @@ import { Redirect } from "react-router-dom";
 import './Navbar.css';
 
 const Navbar = () => {
+
+  function toggleSidebar()
+  {
+    const sideBar = document.querySelector(".navbar");
+
+    sideBar.classList.toggle("active");
+  }
   return (
     <>
       <IconContext.Provider value={{ color: '#ff9f43' }}>
-        <nav className='navbar' id='nav-toggle'>
+        <nav className='navbar'  id='nav-toggle'>
           <ul className='navbar-nav'>
             <li className='logo'>
               <a href='#' className='nav-link'>
                 <span className='link-text logo-text'>NICK</span>
+                <div class="close">
                 <svg aria-hidden="true"
                   focusable="false"
                   data-prefix="fad"
@@ -35,6 +43,7 @@ const Navbar = () => {
                     ></path>
                   </g>
                 </svg>
+                </div>
               </a>
             </li>
 

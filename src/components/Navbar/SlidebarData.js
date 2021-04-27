@@ -7,7 +7,7 @@ import * as VscIcons from "react-icons/vsc";
 import * as IoIcons from "react-icons/io5";
 import Dashboard from '../Dashboard/Dashboard';
 import AboutUs from '../About Us/AboutUs';
-import Assignment from '../Assignment/Assignment';
+import Acedmics from '../Assignment/Assignment';
 import Calender from '../Calender/Calendar';
 import Profile from '../Profile/Profile';
 import Result from '../Result/Result';
@@ -28,17 +28,17 @@ const SidebarData = [
     },  
     {
         title: 'Profile',
-        path: '../Profile',
+        path: '/Profile',
         icon:<AiIcons.AiOutlineUser size={25} />,
         cName: 'nav-item',
         page: {Profile}
     },
     {
-        title: 'Assignments',
-        path: '/assignments',
+        title: 'Academics',
+        path: '/acedmics',
         icon:<MdIcons.MdAssignment size={25} />,
         cName: 'nav-item',
-        page: {Assignment}
+        page: {Acedmics}
     },
     {
         title: 'Time Table',

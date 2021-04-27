@@ -1,17 +1,18 @@
-import React, {useState} from 'react';
-import './Assignment.css'
+import React, { useState } from "react";
+import "./Profile.css";
+import BasicInfo from './Basic'
+import PersonalInfo from './Personalinfo'
+import AcedmicInfo from "./AcedmicInfo";
 
+const TabProfile = () => {
+  const [toggleState, setToggleState] = useState(1);
 
-const Acedmics = () =>
-{
-const [toggleState, setToggleState] = useState(1);
-
-    const toggleTab = (index) => {
-      setToggleState(index);
-    };
-    return(
-        <>
-   <div className='tab_container_profile'>
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+  return (
+    <>
+      <div className='tab_container_profile'>
         <div className='bloc-tabs_profile'>
           <button
             className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
@@ -41,8 +42,7 @@ const [toggleState, setToggleState] = useState(1);
               toggleState === 1 ? "content  active-content" : "content"
             }
           >
-
-          <h1>Content 1</h1>
+             <BasicInfo />
 
 
           </div>
@@ -52,8 +52,7 @@ const [toggleState, setToggleState] = useState(1);
               toggleState === 2 ? "content  active-content" : "content"
             }
           >
-
-          <h1>Content 2</h1>
+           <PersonalInfo />
           </div>
 
           <div
@@ -61,14 +60,13 @@ const [toggleState, setToggleState] = useState(1);
               toggleState === 3 ? "content  active-content" : "content"
             }
           >
-
-          <h1>Content 3</h1>
+         <AcedmicInfo />
           </div>
           
         </div>
       </div>
-</>
-    )
-}
+    </>
+  );
+};
 
-export default Acedmics;
+export default TabProfile;

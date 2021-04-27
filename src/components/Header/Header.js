@@ -1,54 +1,79 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import Profile from '../Profile/Profile';
-import './Header.css'
-import profileImg from './img/profile.jpg'
-
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Acedmics from "../Assignment/Assignment"
+import Profile from "../Profile/Profile";
+import "./Header.css";
+import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+import profileImg from "./img/profile.jpg";
 
 const Header = () => {
+  const time = new Date().toLocaleTimeString();
 
-    const time = new Date().toLocaleTimeString();
+  const [curTime, setCurTime] = useState(time);
 
-    const [curTime, setCurTime] = useState(time);
+  const Uptime = () => {
+    const ntime = new Date().toLocaleTimeString();
+    setCurTime(ntime);
+  };
+  setInterval(Uptime, 1000);
 
-    const Uptime = () => {
-        const ntime = new Date().toLocaleTimeString();
-        setCurTime(ntime);
-    }
-    setInterval(Uptime, 1000);
+  return (
+    <>
+      <div className='main-content'>
+        <header>
+          <h2>Dashboard</h2>
+          <div className='search-wrapper'>
+            <span className='las la-search'></span>
+            <input type='search' placeholder='Search' />
+          </div>
 
-    return (
-        <>
-            <div className="main-content">
-                <header>
-                    <h2>
-                        Dashboard
-                    </h2>
-                    <div className="search-wrapper" >
-                        <span className="las la-search" ></span>
-                        <input type="search" placeholder="Search" />
-                    </div>
-
-
-                    <div className="user-wrapper">
-                        <div className="current-time">
-                            <h3>{curTime}</h3>
-                        </div>
-                        <a href={Profile}>
-                            <img src={profileImg} width="50px" height="50px" alt="Profile-image" />
-                        </a>
-                        <Link to={Profile}>
-                            <div className="headerName">
-                                <h4>Nick Kubde</h4>
-                                <small>Super Admin</small>
-                            </div>
-                        </Link>
-                    </div>
-                </header>
+          <div className='user-wrapper'>
+            <div className='notification_dropDown'>
+              <NotificationsActiveIcon />
+              <div className='link_content_notification'>
+                <small>Your MST 2 Marks had been Updated</small>
+                <small>Your MST 2 Marks had been Updated</small>
+                <small>Test is on 24-April-2021</small>
+                <small>Your MST 1 Marks had been Updated</small>
+                <small>Your MST 2 Marks had been Updated</small>
+              </div>
             </div>
-        </>
-    );
+            <div className='current-time'>
+              <h3>{curTime}</h3>
+            </div>
+            <div className='hidden_dropDown'>
+              <a href={"./profile"}>
+                <img
+                  src={profileImg}
+                  width='50px'
+                  height='50px'
+                  alt='Profile-image'
+                />
+              </a>
 
-}
+              <div className='link_content'>
+                <a className='link' href={Acedmics}>
+                  Home
+                </a>
+                <a className='link' href={Profile}>
+                  Profile
+                </a>
+                <a className='link' href={Profile}>
+                  Acedmic
+                </a>
+              </div>
+            </div>
+            <div className='headerName'>
+              <Link to={'./acedmics'}>
+                <h4>Nick Kubde</h4>
+                <small>Super Admin</small>
+              </Link>
+            </div>
+          </div>
+        </header>
+      </div>
+    </>
+  );
+};
 
 export default Header;

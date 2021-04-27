@@ -37,6 +37,7 @@ main {
 
 .navbar {
   position: fixed;
+  transform: translate(-0%);
   background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: scroll;

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import Calenders from '../Calender/Calendar';
+import ProfileCard from '../Dashboard/Profile_card';
 import Header from '../Header/Header';
 // import Keep from '../Keep/keep';
 // import TodoMaterial from '../Todo/ToDo_Material';
@@ -21,11 +22,12 @@ const Dashboard = () =>
         <>
             <main className="dashboard">
 
-                <div  className="First-row-cards">
+                <div  className="First_row">
                    <Cards />
                    {/* <TodoMaterial /> */}
                 </div>
 
+                   <ProfileCard />
                 <div className="secod-row">
                     <div className='charts'>
                         {/* <Charts /> */}

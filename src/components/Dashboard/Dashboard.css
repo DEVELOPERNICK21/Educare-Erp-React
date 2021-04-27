@@ -3,17 +3,29 @@
 }
 
 .dashboard {
-  height: 100%;
-
-  width: 97%;
-
-  margin-left: 2rem;
-
   display: flex;
 
   flex-direction: column;
 
+  height: 100vh;
+
+  width: 100%;
+
+  margin-top: 3rem;
+
+  margin-left: 2rem;
+
+  /* background-color: rgb(228, 255, 205); */
+
   flex-wrap: wrap;
+}
+
+.First_row {
+  display: flex;
+
+  /* background-color: rgb(118, 147, 243); */
+
+  width: 100%;
 }
 
 .secod-row {
@@ -37,7 +49,7 @@
     flex-direction: column;
   }
 
-  .First-row-cards {
+  .First-row {
     display: flex;
 
     flex-direction: column-reverse;

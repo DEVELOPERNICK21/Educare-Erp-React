@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Dashboard from './components/Dashboard/Dashboard';
 import AboutUs from './components/About Us/AboutUs';
-import Assignment from './components/Assignment/Assignment';
+import Acedmics from './components/Assignment/Assignment';
 import Calender from './components/Calender/Calendar';
 import Profile from './components/Profile/Profile';
 import Result from './components/Result/Result';
@@ -35,7 +35,7 @@ const App = () => {
           <Route path='/support' component={Support} />
           <Route path='/todo' component={TodoMaterial} />
           <Route path='/keep' component={Keep} />
-          <Route path='/assignments' component={Assignment} />
+          <Route path='/acedmics' component={Acedmics} />
           <Route path='/socialtiles' component={SocialTiles} />
       </Switch>
     </Router>

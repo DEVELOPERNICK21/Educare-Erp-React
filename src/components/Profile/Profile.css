@@ -19,7 +19,9 @@
 
   min-width: 100%;
 
-  min-height: 13rem;
+  min-height: 8rem;
+
+  margin-top: 5rem;
 
   display: flex;
 
@@ -31,9 +33,11 @@
 
   flex-direction: column;
 
-  text-align: center;
+  flex-wrap: wrap;
 
-  justify-content: center;
+  text-align: left;
+
+  margin-left: 10rem;
 }
 
 .down_area {
@@ -93,7 +97,7 @@
 
   color: rgb(71, 71, 71);
 
-  padding: 4rem;
+  padding: 1rem;
 
   flex-direction: column;
 
@@ -103,11 +107,15 @@
 }
 
 .profileName {
-  display: inline-block;
+  display: flex;
 
-  color: rgb(71, 71, 71);
+  flex-direction: column;
 
-  margin-top: -3px;
+  color: rgb(26, 25, 25);
+
+  margin-top: 4rem;
+
+  font-size: 1.4rem;
 }
 
 .right_area img {
@@ -115,7 +123,7 @@
 }
 
 .Profile_tabelq {
-  /* font-family: arial, sans-serif; */
+  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 98%;
   height: 15rem;
@@ -148,3 +156,130 @@
 .tr_profile:nth-child(even) {
   background-color: #67b8fa;
 }
+
+.lg-btn {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 0 0;
+  border: none;
+  width: 15rem;
+  text-decoration: none;
+  color: #00c6ff;
+  font-size: 24px;
+  overflow: hidden;
+  background-color: black;
+  font-family: cosolas;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  margin-left: 30px;
+  margin: 30px;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.lg-btn:hover {
+  background: #00c6ff;
+  color: #050801;
+  box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
+    0 0 200px #00c6ff;
+}
+
+/* start adding style for tabs on right area */
+
+.tab_container_profile {
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  width: 100%;
+  height: 100vh;
+  /* margin: 100px auto 0; */
+  word-break: break-all;
+}
+
+.bloc-tabs_profile {
+  display: flex;
+}
+
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 10%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgb(77, 138, 250);
+  box-sizing: content-box;
+  border: none;
+  display: inline-block;
+  background-color: black;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  margin: 3px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.tabs:hover {
+  background: #00c6ff;
+  color: #050801;
+  box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
+    0 0 200px #00c6ff;
+}
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+  background: white;
+  color: #000000;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+  padding-right: 2rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+
+/* Ending adding style for tabs on right area */
