@@ -35,7 +35,7 @@ const SidebarData = [
     },
     {
         title: 'Assignments',
-        path: '/Assignments',
+        path: '/assignments',
         icon:<MdIcons.MdAssignment size={25} />,
         cName: 'nav-item',
         page: {Assignment}

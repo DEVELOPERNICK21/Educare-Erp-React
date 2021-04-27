@@ -63,9 +63,11 @@
 
   width: 30%;
 
+  justify-content: flex-start;
+
   flex-wrap: wrap;
 
-  padding: 3rem;
+  padding: 4rem;
 
   flex-direction: column;
 
@@ -74,12 +76,16 @@
   text-align: center;
 
   margin-left: 25px;
+}
 
-  /* justify-content: center; */
+.right_area h2 {
+  margin: 5rem;
 }
 
 .left_area {
   display: flex;
+
+  position: inherit;
 
   background: #fff;
 
@@ -87,13 +93,13 @@
 
   color: rgb(71, 71, 71);
 
-  justify-content: center;
+  padding: 4rem;
 
   flex-direction: column;
 
   align-items: center;
 
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .profileName {
@@ -106,4 +112,39 @@
 
 .right_area img {
   border-radius: 50%;
+}
+
+.Profile_tabelq {
+  /* font-family: arial, sans-serif; */
+  border-collapse: collapse;
+  width: 98%;
+  height: 15rem;
+  text-align: center;
+}
+
+.th_profileq .td_profileq {
+  border: 1px solid #0f0e0e;
+  text-align: center;
+  padding: 2rem;
+}
+
+.tr_profileq:nth-child(even) {
+  background-color: #67b8fa;
+}
+.Profile_tabel {
+  /* font-family: arial, sans-serif; */
+  border-collapse: collapse;
+  width: 98%;
+  text-align: center;
+  height: 25rem;
+}
+
+.th_profile .td_profile {
+  border: 1px solid #0f0e0e;
+  text-align: left;
+  padding: 2rem;
+}
+
+.tr_profile:nth-child(even) {
+  background-color: #67b8fa;
 }

@@ -17,6 +17,7 @@ import TodoMaterial from './components/Todo/ToDo_Material';
 import Keep from './components/Keep/keep';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import SocialTiles from './components/Support/Social_tiles';
 
 const App = () => {
   return (
@@ -34,7 +35,8 @@ const App = () => {
           <Route path='/support' component={Support} />
           <Route path='/todo' component={TodoMaterial} />
           <Route path='/keep' component={Keep} />
-          <Route path='/assignment' component={Assignment} />
+          <Route path='/assignments' component={Assignment} />
+          <Route path='/socialtiles' component={SocialTiles} />
       </Switch>
     </Router>
       <Footer />

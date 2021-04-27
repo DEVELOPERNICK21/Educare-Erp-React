@@ -9,6 +9,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Button from "@material-ui/core/Button";
 import CheckIcon from '@material-ui/icons/Check';
+import SocialTiles from '../Support/Social_tiles';
 
 const Support = () => {
     return (
@@ -20,7 +21,7 @@ const Support = () => {
                             <h2>Contact Info</h2>
                             <ul className="info">
                                 <li>
-                                    <span><LocationOnIcon /></span>
+                                    <span><LocationOnIcon className="Con_Icon"/></span>
                                     <span>
                                         Hp Gas Agency <br />
                                     Bhopal, M.P. <br />
@@ -30,24 +31,25 @@ const Support = () => {
 
                                 <li>
                                     <span>
-                                        <EmailIcon />
+                                        <EmailIcon className="Con_Icon" />
                                     </span>
                                     <span>nickkubde21@gmail.com</span>
                                 </li>
 
                                 <li>
                                     <span>
-                                        <CallIcon />
+                                        <CallIcon className="Con_Icon" />
                                     </span>
                                     <span>+91 882741901</span>
                                 </li>
                             </ul>
                         </div>
                         <ul className="social">
-                            <li><a href="#"><FacebookIcon /></a></li>
+                            {/* <li><a href="#"><FacebookIcon /></a></li>
                             <li><a href="#"><WhatsAppIcon /></a></li>
                             <li><a href="#"><InstagramIcon /></a></li>
-                            <li><a href="#"><TwitterIcon /></a></li>
+                            <li><a href="#"><TwitterIcon /></a></li> */}
+                        <SocialTiles />
                         </ul>
                     </div>
                     <div className="contactForm">
@@ -79,7 +81,7 @@ const Support = () => {
                             </div>
 
                             <div className="inputBox w100">
-                                <Button variant='contained' color='disabled'>
+                                <Button variant='contained' color='disable'>
                                     <CheckIcon /> Save
                             </Button>
                             </div>
