@@ -283,3 +283,158 @@ button {
 }
 
 /* Ending adding style for tabs on right area */
+
+/* Side Profile styling Started */
+
+.side_profile-card {
+  width: 400px;
+  position: inherit;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.side_card-header {
+  background: #ffffff;
+  padding: 60px 40px;
+}
+
+.side_pic {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #00c8ff, #000000, #0089fa);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+.side_pic img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.side_profile_name {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.side_profile_desc {
+  font-size: 18px;
+  color: #000000;
+}
+
+.side_profile_sm {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.side_profile_sm a {
+  color: #000000;
+  width: 56px;
+  font-size: 22px;
+  transition: 0.3s linear;
+}
+
+.side_profile_sm .facebook:hover {
+  color: #4267b2;
+}
+
+.side_profile_sm .Instagram:hover {
+  color: #8a3ab9;
+}
+
+.side_profile_sm .Whatsapp:hover {
+  color: #4fce5d;
+}
+
+.side_profile_sm .Tweet:hover {
+  color: #1da1f2;
+}
+
+.side_profile_sm .Linkdin:hover {
+  color: #0077b5;
+}
+
+.side_profile_contact-btn {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 0 0;
+  border-radius: 0.3rem;
+  border: none;
+  width: 15rem;
+  text-decoration: none;
+  color: #00c6ff;
+  font-size: 24px;
+  overflow: hidden;
+  background-color: black;
+  font-family: cosolas;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  margin-left: 30px;
+  margin: 30px;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.side_profile_contact-btn:hover {
+  background: #00c6ff;
+  color: #050801;
+  box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
+    0 0 200px #00c6ff;
+}
+
+.side_profile_card-footercard-footer {
+  background: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.side_profile_numbers {
+  display: flex;
+  align-items: center;
+}
+
+.side_profile_item {
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #00c6ff;
+}
+
+.side_profile_item span {
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+
+.side_profile_border {
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
+
+/* Side Profile styling Ended */

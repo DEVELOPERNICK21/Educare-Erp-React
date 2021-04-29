@@ -59,33 +59,89 @@ const dataSource = {
   ]
 };
 
+const dataSource2 = {
+  chart: {
+      caption: "Monthly revenue for last year",
+      subCaption: "Harry's SuperMart",
+      xAxisName: "Month",
+      yAxisName: "Revenues (In USD)",
+      numberPrefix: "$",
+      theme: "fusion"
+  },
+  data: [
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+      {
+          label: "Jan",
+          value: "420000"
+      },
+  ],
+  trendlines: [
+      {
+          line: [
+              {
+                  startvalue: "700000",
+                  valueOnRight: "1",
+                  displayvalue: "Monthly Target"
+              }
+          ]
+      }
+  ]
+}
+
+
+
+
 const Charts = () => 
 {
   
 
 
   return (
-    <div className="chart">
-      <div className="first-part">
+    <>
             <ReactFusioncharts
                   type="doughnut2d"
-                  width="100%"
+                  width="60%"
                   height="55%"
                   dataFormat="JSON"
                   dataSource={dataSource}
           />
-        </div>
-        {/* <div className="second-part">
+{/*          
             <ReactFusioncharts
-                  type="doughnut2d"
-                  width="100%"
+                  type="column2d"
+                  width="60%"
                   height="55%"
                   dataFormat="JSON"
-                  dataSource={dataSource}
-          />
-        </div> */}
-
-    </div>
+                  dataSource={dataSource2}
+          /> */}
+      
+</>
   );
 }
 

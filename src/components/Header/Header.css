@@ -177,12 +177,61 @@ header label span {
   color: black;
 }
 
+.vr3 {
+  border-left: 1px solid #000;
+  height: 5px;
+}
+
+.vr {
+  width: 1px;
+  background-color: rgb(93, 92, 92);
+  position: absolute;
+  border-left: 1px solid #ccc;
+  height: 85.5px;
+  margin-top: -25px;
+  top: 0;
+  left: -10px;
+  bottom: 0;
+}
+
+.vr2 {
+  width: 1px;
+  background-color: rgb(93, 92, 92);
+  position: absolute;
+  border-left: 1px solid #ccc;
+  height: 85.5px;
+  margin-top: -25px;
+  margin-left: 45px;
+  top: 0;
+  left: -5px;
+  bottom: 0;
+}
+
+.vr3 {
+  width: 1px;
+  background-color: rgb(93, 92, 92);
+  position: absolute;
+  border-left: 1px solid #ccc;
+  height: 94px;
+  margin-top: -25px;
+  /* margin-left: 45px; */
+  top: 0;
+  left: -10px;
+  bottom: 0;
+}
+
 .notification_dropDown {
   position: relative;
 
   margin-right: 1rem;
 
   color: rgb(100, 100, 100);
+
+  /* border: 2px solid #000;
+
+  border-radius: 50%;
+
+  padding: 2px; */
 }
 
 .notification_dropDown:hover .link_content_notification {

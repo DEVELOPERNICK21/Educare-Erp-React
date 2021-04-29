@@ -10,13 +10,18 @@ import Cards from './Cards';
 import Charts from './charts';
 import './Dashboard.css'
 import Graphs from './Graph';
+import Chart from 'react-apexcharts'
 
 
 const Dashboard = () => 
 {
     const [cardcolor, setCardColor] = useState("#AB90FF");
 
-    const  attendPer = 90 ;     
+    const  attendPer = 90 ;  
+    
+     
+
+  
 
     return(
         <>
@@ -24,23 +29,24 @@ const Dashboard = () =>
 
                 <div  className="First_row">
                    <Cards />
-                   {/* <TodoMaterial /> */}
                 </div>
 
-                   <ProfileCard />
                 <div className="secod-row">
                     <div className='charts'>
-                        {/* <Charts /> */}
+                   {/* <ProfileCard /> */}
                     </div>
+                        {/* <Charts /> */}
+                
+                  
                     <div className='calender'>
-                        <Calenders  />
+                        {/* <Calenders  /> */}
                     </div>
                 </div>
 
 
                 <div className="Third-row">
                     {/* <Graphs /> */}
-                    {/* <Keep /> */}
+
                 </div>
 
             <div style={{ marginTop: 90, display: 'flex' }}>
@@ -52,6 +58,10 @@ const Dashboard = () =>
 
             <div>
                 
+                   {/* <Cards />
+                   <ProfileCard />
+                        <Charts />
+                        <Calenders  /> */}
             </div>
             </main>
 

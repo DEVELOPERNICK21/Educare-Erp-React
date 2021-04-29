@@ -1,24 +1,50 @@
 .profile-card {
-  width: 400px;
-  margin-left: 5rem;
+  width: 800px;
+  /* height: 600px; */
+  margin-left: 45rem;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
 }
+/* .profile-card {
+  background: #00c6ff;
+  color: #050801;
+  box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
+    0 0 200px #00c6ff;
+} */
 
 .card-header {
-  background: #2c3a47;
-  padding: 60px 40px;
+  /* background: #2c3a47; */
+  padding: 20px 20px;
+  /* background: linear-gradient(130deg, #a3a3a3, #414345); */
+  background: #23232e;
+  /* background-image: url("./img/bg.jpg"); */
+  /* background-repeat: no-repeat, repeat;
+  background-size: cover; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 800px;
 }
 
 .pic {
   display: inline-block;
-  padding: 8px;
-  background: linear-gradient(130deg, #00c6ff, #681da5, #048eff);
+  padding: 6px;
+  background: linear-gradient(130deg, #00c8ff, #000000, #0089fa);
   margin: auto;
   border-radius: 50%;
   background-size: 200% 200%;
-  animation: animated-gradient 2s linear infinite;
+  animation: animated-gradient 3s linear infinite;
+}
+
+.pc_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 @keyframes animated-gradient {
@@ -66,6 +92,7 @@
   width: 56px;
   font-size: 22px;
   transition: 0.3s linear;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .sm .facebook:hover {
@@ -89,24 +116,40 @@
 }
 
 .contact-btn {
+  position: relative;
   display: inline-block;
-  padding: 12px 50px;
-  color: #ffb46d;
+  padding: 5px 5px;
+  margin: 0 0;
+  border-radius: 0.3rem;
+  border: none;
+  width: 15rem;
   text-decoration: none;
-  border: 2px solid #ffb46d;
-  border-radius: 6px;
-  margin-top: 16px;
-  transition: 0.3s linear;
+  color: #00c6ff;
+  font-size: 24px;
+  overflow: hidden;
+  background-color: black;
+  font-family: cosolas;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  margin-left: 30px;
+  margin: 30px;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .contact-btn:hover {
-  background: #ffb46d;
-  color: #f2f2f2;
+  background: #00c6ff;
+  color: #050801;
+  box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
+    0 0 200px #00c6ff;
 }
 
 .card-footer {
   background: #f4f4f4;
-  padding: 60px 10px;
+  padding: 20px 20px;
+  height: 80px;
 }
 
 .numbers {

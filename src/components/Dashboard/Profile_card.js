@@ -1,6 +1,7 @@
 import React from "react";
 import "./Profilecard.css"
 import Profile from './img/profile.jpg';
+import backg from './img/bg.jpg';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -17,7 +18,16 @@ const ProfileCard = () => {
       <img src={Profile}  alt="Card_image" />
     </div>
     <div className="name">Nick Kubde</div>
+    <div className="pc_details">
     <div className="desc">Developer &amp; Designer</div>
+    <br/>
+    <div className="desc">nikhilkubde21@gmail.com</div>
+    <br/>
+    <div className="desc">+91 8827411901</div>
+    <br/>
+    <div className="desc">City- Bhopal</div>
+    </div>
+    <a href="#" className="contact-btn">Contact Me</a>
     <div className="sm">
       <a href="#" className="facebook"><FacebookIcon /></a>
       <a href="#" className="Whatsapp"><WhatsAppIcon /></a>
@@ -25,7 +35,6 @@ const ProfileCard = () => {
       <a href="#" className="Tweet"><TwitterIcon /></a>
       <a href="#" className="Linkdin"><LinkedInIcon /></a>
     </div>
-    <a href="#" className="contact-btn">Contact Me</a>
   </div>
   <div className="card-footer">
     <div className="numbers">

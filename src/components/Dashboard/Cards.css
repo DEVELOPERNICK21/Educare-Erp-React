@@ -1,4 +1,4 @@
-main {
+/* main {
   display: flex;
 
   flex-direction: row;
@@ -9,7 +9,7 @@ main {
   background: #f1f5f9;
   margin-left: 2.7rem;
   min-height: calc(100vh-90px);
-}
+} */
 
 .cards {
   display: flex;

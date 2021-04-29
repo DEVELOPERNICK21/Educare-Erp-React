@@ -29,7 +29,9 @@ const Header = () => {
 
           <div className='user-wrapper'>
             <div className='notification_dropDown'>
-              <NotificationsActiveIcon />
+                          <NotificationsActiveIcon />
+            <div className="vr">&nbsp;</div>
+            <div className="vr2">&nbsp;</div>
               <div className='link_content_notification'>
                 <small>Your MST 2 Marks had been Updated</small>
                 <small>Your MST 2 Marks had been Updated</small>
@@ -39,9 +41,13 @@ const Header = () => {
               </div>
             </div>
             <div className='current-time'>
+
               <h3>{curTime}</h3>
+
             </div>
             <div className='hidden_dropDown'>
+            {/* <div className="vr2">&nbsp;</div> */}
+              <div className="vr3"></div>
               <a href={"./profile"}>
                 <img
                   src={profileImg}
@@ -69,6 +75,7 @@ const Header = () => {
                 <small>Super Admin</small>
               </Link>
             </div>
+
           </div>
         </header>
       </div>
