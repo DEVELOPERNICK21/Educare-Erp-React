@@ -17,42 +17,48 @@
   flex-wrap: wrap;
   grid-template-columns: repeat(4, 1fr); /* Important */
   grid-gap: 2rem;
-  margin-top: 1rem;
 }
 
 .card-single {
   display: flex;
-  width: 18rem;
+  color: #000;
+  width: 16rem;
+  height: 9rem;
   justify-content: space-between;
   background: #fff;
   padding: 2rem;
-  color: #fff;
-  background-color: var(--backg-primary);
+  /* color: #fff; */
+  /* background-color: var(--backg-primary); */
   border-radius: 1.2rem;
+}
+.card-single {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12),
+    0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
 }
 
 .card-single div:last-child span {
   font-size: 3rem;
-  color: #fff;
+  color: #000;
 }
 
 .card-single div:first-child span {
   /* color: var(--textmain-primary); */
-  color: #fff;
+  color: #000;
 }
 
 .card-single:last-child {
-  background-color: var(--backg-primary);
+  /* background-color: var(--backg-primary); */
+  color: #000;
 }
 
 .card-single:last-child div :last-child span {
   font-size: 3rem;
-  color: var(--textmain-primary);
+  /* color: var(--textmain-primary); */
 }
 
 .card-single:last-child div :last-child span,
 .card-single:last-child h1 {
-  color: #fff;
+  color: #000;
 }
 
 @media only screen and (max-width: 900px) {

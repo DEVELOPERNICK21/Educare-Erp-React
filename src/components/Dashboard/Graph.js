@@ -38,33 +38,37 @@ const dataSource2 = {
       },
       {
           label: "Jan",
-          value: "420000"
+          value: "320000"
       },
       {
           label: "Jan",
-          value: "420000"
+          value: "40000"
       },
       {
           label: "Jan",
-          value: "420000"
+          value: "520000"
       },
       {
           label: "Jan",
-          value: "420000"
+          value: "493000"
       },
       {
           label: "Jan",
-          value: "420000"
+          value: "360000"
       },
       {
           label: "Jan",
-          value: "420000"
+          value: "370000"
       },
       {
           label: "Jan",
           value: "420000"
       },
   ],
+  style: {
+    position: "inherit",
+   
+  },
   trendlines: [
       {
           line: [
@@ -86,10 +90,11 @@ const Graphs = () =>
   return (
     <>
          
-            <ReactFusioncharts
+            <ReactFusioncharts 
                   type="column2d"
-                  width="60%"
-                  height="55%"
+                  width="35%"
+                  height="35%"
+                  position="inherit"
                   dataFormat="JSON"
                   dataSource={dataSource2}
           />

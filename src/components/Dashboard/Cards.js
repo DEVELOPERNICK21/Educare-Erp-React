@@ -5,7 +5,7 @@ import './Cards.css'
 
 const Cards = () => 
 {
-    const [cardcolor, setCardColor] = useState("#AB90FF");
+    const [cardcolor, setCardColor] = useState("#fff");
 
     const  attendPer = 90 ;
     
@@ -15,7 +15,7 @@ const Cards = () =>
             <main className="card">
 
                 <div  className="cards">
-                    <div className="card-single" style={{background:cardcolor}}>
+                    <div className="card-single" >
                         <div >
                             <h1>{attendPer}%</h1>
                             <span>Attendance</span>
