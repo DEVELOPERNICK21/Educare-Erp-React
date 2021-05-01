@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import FooterKeep from './FooterKeeps';
-import HeaderKeep from './Header';
 import KeepNote from './KeepNotes';
 import './Keepstyle.css'
 import ShowNotes from './ShowNotes';
@@ -38,13 +36,13 @@ const Keep = (props) => {
 
     return (
         <>
-            <div className='main_div' onDoubleClick={CloseExpand} >
-                {/* <HeaderKeep /> */}
-
+            <div className='main_keep' onDoubleClick={CloseExpand} >
+            
+                <div className="upperKeep">
                 <KeepNote noteHere={addNote} first={Expand} second={CloseExpand} third={show} />
-
+                </div>
                
-                <div className="notesstyle">
+                <div className="notesstyler">
                     {addedNote.map((val, index) => {
                         return (<ShowNotes key={index}
                             id={index}
@@ -54,7 +52,6 @@ const Keep = (props) => {
                         />);
                     })}
                 </div>
-                {/* <FooterKeep /> */}
             </div>
         </>
     );

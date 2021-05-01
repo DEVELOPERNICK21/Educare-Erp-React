@@ -1,6 +1,6 @@
 .profile-card {
   width: 800px;
-  /* height: 600px; */
+  height: 24rem;
   /* margin-left: 45rem; */
   text-align: center;
   border-radius: 8px;
@@ -29,14 +29,14 @@
   justify-content: space-evenly;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 250px;
+  height: 300px;
   width: 800px;
 }
 
 .pic {
   display: inline-block;
   padding: 6px;
-  background: linear-gradient(130deg, #00c8ff, #000000, #0089fa);
+  background: linear-gradient(130deg, #2f00ff, hsl(177, 100%, 51%), #0089fa);
   margin: auto;
   border-radius: 50%;
   background-size: 200% 200%;
@@ -152,7 +152,7 @@
 .card-footer {
   background: #f4f4f4;
   padding: 20px 20px;
-  height: 80px;
+  height: 60px;
 }
 
 .numbers {

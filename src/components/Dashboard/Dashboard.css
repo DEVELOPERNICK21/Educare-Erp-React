@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
 }
 
 .dashboard {
@@ -15,7 +19,7 @@
 
   margin-top: 3rem;
 
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 
   background-color: #f4f5f7;
 
@@ -40,7 +44,7 @@
   /* box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12),
     0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1); */
 
-  margin-left: 10rem;
+  margin-left: 9rem;
   height: 12rem;
 
   margin-top: 5rem;
@@ -59,7 +63,7 @@
 
   flex-wrap: wrap;
 
-  margin: 2rem;
+  /* margin: 2rem; */
 
   /* position: inherit; */
 
@@ -95,7 +99,7 @@
   /* box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12),
     0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1); */
 
-  margin-left: 10rem;
+  margin-left: 9rem;
 
   height: 25rem;
 
@@ -123,14 +127,14 @@
 }
 
 .chart_rowThird {
-  margin-left: 5rem;
+  margin-left: 0rem;
 }
 .profile_rowThird {
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .calender_rowThird {
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .react-calendar {
@@ -141,9 +145,15 @@
   border: none;
 }
 
-#reactgooglegraph-3 div {
+#reactgooglegraph-3 div svg rect g {
   position: inherit;
   display: flex;
+  margin: 5rem;
+  z-index: 9rem;
+  padding: 4rem;
+}
+#reactgooglegraph-3 div {
+  position: inherit;
   box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12),
     0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
 }
@@ -154,9 +164,11 @@
     0 7px 70px rgba(95, 98, 102, 0.1);
 }
 
-#reactgooglegraph-1 {
+#reactgooglegraph-1 div {
   box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12),
     0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
+
+  position: relative;
 }
 @media only screen and (max-width: 800px) {
   .dashboard {

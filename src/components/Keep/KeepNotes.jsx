@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./addnotes.css";
 import Button from "@material-ui/core/Button";
 import Form from "react-bootstrap/Form";
 import AddIcon from "@material-ui/icons/Add";
@@ -34,10 +33,11 @@ const KeepNote = (props) => {
 
     return (
         <>
-                <div className='container' >
+                <div className='KeepContainer' >
                     <form >
                         {props.third ? (
-                            <input
+                    <div className="addNoteTitle">
+                            <input className="addNotesKeepInputTitle"
                                 type='text'
                                 name="title"
                                 maxLength="40"
@@ -45,8 +45,11 @@ const KeepNote = (props) => {
                                 onChange={InputData}
                                 placeholder='Title'
                                 autoComplete='off'
-                            />) : null}
-                        <textarea column=''
+                            /> </div>) : null}
+                            <div className="addNoteContent">
+                        <textarea
+                            className="addNotesKeepTextConyent"
+                            column=''
                             row=''
                             maxLength="150"
                             name="content"
@@ -55,12 +58,14 @@ const KeepNote = (props) => {
                             placeholder='Enter the notes here!!!'
                             onClick={props.first}
                         />
-
+                        <div className="addNoteBut">
                         {props.third ?
                             (<Button onClick={addEvent} variant='contained' color='disabled'>
                                 <AddIcon />
                             </Button>
                             ) : null}
+                            </div>
+                            </div>
 
                     </form>
                 </div>
