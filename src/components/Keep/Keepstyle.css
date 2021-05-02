@@ -112,7 +112,7 @@
   color: #333;
   border: none;
   outline: none;
-  /* border-bottom: 1px solid #777; */
+  border-bottom: 0.5px solid rgb(194, 194, 194);
 }
 
 .addNotesKeepTextConyent {
@@ -125,7 +125,10 @@
   color: #333;
   border: none;
   outline: none;
-  /* border-bottom: 1px solid #777; */
+}
+
+.addNotesKeepTextConyent:focus {
+  border-bottom: 0.5px solid rgb(194, 194, 194);
 }
 
 .addNoteBut button {

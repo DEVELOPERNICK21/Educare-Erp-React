@@ -48,14 +48,14 @@ const ListTodo = (props) => {
                         style={{marginRight:"-20px"}} 
                         className="deleteIcon" />
                     </span>
+                    <li style={{textDecoration : line ? "line-through" : "none"}}>
+                        {props.texert} {props.key}
+                    </li> 
                     <span> 
                         <DeleteIcon 
                         onClick={() => props.deleteList(props.id)}
                         className="deleteIcon" />
                     </span>
-                    <li style={{textDecoration : line ? "line-through" : "none"}}>
-                        {props.texert} {props.key}
-                    </li> 
                 </div>
               </>
             );
