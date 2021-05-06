@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {card} from './img/card.svg'
 import ReactFC from "react-fusioncharts";
 
 // Include the fusioncharts library

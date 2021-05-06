@@ -61,11 +61,19 @@
 .Fee_right_area {
   display: flex;
 
-  background: #feffff;
+  /* background: #feffff; */
+
+  background-image: url("./img/card.svg");
+
+  background-repeat: no-repeat no-repeat;
 
   border-right: 2px solid #ccc;
 
   width: 30%;
+
+  margin-top: 15rem;
+
+  background-size: 30rem;
 
   justify-content: flex-start;
 
@@ -81,6 +89,31 @@
 
   margin-left: 25px;
 }
+
+/* Animation started */
+.Fee_right_area::before {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+/* Animation Ended */
 
 .Fee_right_area h2 {
   margin: 5rem;
