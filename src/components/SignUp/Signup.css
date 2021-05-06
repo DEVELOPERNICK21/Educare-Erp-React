@@ -1,0 +1,203 @@
+.allsignup {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  position: relative;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.wrapper {
+  padding: 50px 25px 0;
+
+  max-width: 668px;
+
+  width: 100%;
+
+  margin: auto;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* bottom: 50rem; */
+  /* background-color: rgb(173, 229, 255); */
+  left: 0rem;
+  margin-top: 5rem;
+  right: 0;
+  background-size: 40rem;
+  background-image: url("./Images/signBg2.svg"), url("./Images/trufr.svg");
+  background-position: right, left;
+  /* background-size: cover; */
+  background-repeat: no-repeat no-repeat;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.wrapper .Headeline {
+  text-align: center;
+
+  padding-bottom: 48px;
+}
+
+.wrapper .Headeline h1 {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  line-height: 52px;
+}
+
+.wrapper .signupForm {
+  max-width: 350px;
+
+  width: 100%;
+
+  margin: auto;
+}
+
+.wrapper .form-group {
+  margin-bottom: 15px;
+}
+
+.wrapper .form_group input {
+  display: block;
+
+  font-size: 16px;
+
+  line-height: 24px;
+
+  letter-spacing: -0.1px;
+
+  padding: 11px 15px;
+
+  height: 48px;
+
+  margin: 1rem;
+
+  border-radius: 5px;
+
+  color: #000;
+
+  border: 1px solid #e4e8ee;
+
+  box-shadow: none;
+
+  width: 100%;
+}
+
+.wrapper .form_group input:focus {
+  outline: none;
+}
+
+.wrapper .form_group input::placeholder {
+  color: rgb(143, 134, 134);
+
+  font-weight: 400;
+
+  font-size: 14px;
+}
+
+.wrapper .btn {
+  width: 100%;
+
+  margin: 15px 0 30px;
+
+  font-size: 14px;
+
+  line-height: 22px;
+
+  font-weight: 700;
+
+  padding: 12px 29px;
+
+  height: 48px;
+
+  text-transform: uppercase;
+
+  color: #dfe6f0;
+
+  margin: 1rem;
+
+  background-color: rgb(97 89 230);
+
+  border: none;
+
+  border-radius: 2px;
+
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.wrapper .btn:hover {
+  background-color: rgb(62, 4, 255);
+}
+
+.wrapper .btn:focus {
+  outline: none;
+}
+
+.wrapper .account_exit {
+  color: #000;
+
+  border-top: 1px solid rgb(238, 225, 225);
+
+  padding-top: 20px;
+
+  text-align: center;
+}
+
+.wrapper .account_exit a {
+  color: rgb(255, 154, 123);
+}
+
+.wrapper .forget_password {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 15px 0;
+}
+
+.wrapper .forget_password a {
+  color: rgb(255, 154, 123);
+}
+
+.wrapper .forget_password .check_box {
+  font-size: 15px;
+
+  color: #000;
+}
+
+@media (max-width: 1030px) {
+  .wrapper .wrapper::before {
+    left: -25%;
+
+    min-height: 60vh;
+
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 550px;
+  }
+
+  .wrapper .Headeline h1 {
+    font-size: 22px;
+
+    line-height: 25px;
+  }
+}

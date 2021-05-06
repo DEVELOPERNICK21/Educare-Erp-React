@@ -7,6 +7,7 @@ const Google_chart2 = () =>
     width={'300px'}
     height={'24rem'}
     chartType="PieChart"
+   className="gc-3"
     loader={<div>Loading Chart</div>}
     data={[
       ['Task', 'Hours per Day'],

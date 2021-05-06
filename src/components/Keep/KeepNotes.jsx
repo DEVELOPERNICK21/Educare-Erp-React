@@ -41,7 +41,7 @@ const KeepNote = (props) => {
                                 type='text'
                                 name="title"
                                 maxLength="40"
-                                value={note.title}
+                                value={note.title}w
                                 onChange={InputData}
                                 placeholder='Title'
                                 autoComplete='off'

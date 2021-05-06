@@ -186,6 +186,8 @@
 
   display: flex;
 
+  margin-bottom: 35rem;
+
   /* background-color: #114eca; */
 
   flex-direction: column;

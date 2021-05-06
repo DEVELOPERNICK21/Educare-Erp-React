@@ -7,6 +7,7 @@ import * as VscIcons from "react-icons/vsc";
 import * as IoIcons from "react-icons/io5";
 import Dashboard from '../Dashboard/Dashboard';
 import AboutUs from '../About Us/AboutUs';
+import Fee from '../Fees/Fee';
 import Acedmics from '../Assignment/Assignment';
 import Calender from '../Calender/Calendar';
 import Profile from '../Profile/Profile';
@@ -27,8 +28,8 @@ const SidebarData = [
         page: {Dashboard}
     },  
     {
-        title: 'Profile',
-        path: '/Profile',
+        title: 'profile',
+        path: '/profile',
         icon:<AiIcons.AiOutlineUser size={25} />,
         cName: 'nav-item',
         page: {Profile}
@@ -77,10 +78,10 @@ const SidebarData = [
     },
     {
         title: 'Fees',
-        path: '/Fees',
+        path: '/fee',
         icon:<IoIcons.IoCashOutline size={25} />,
         cName: 'nav-item',
-        page: {AboutUs}
+        page: {Fee}
     },
     {
         title: 'Support',

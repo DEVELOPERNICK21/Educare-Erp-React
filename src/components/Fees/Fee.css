@@ -1,4 +1,4 @@
-.profile_area {
+.Fee_area {
   display: flex;
 
   flex-direction: column;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-.upper_area {
+.Fee_upper_area {
   position: inherit;
 
   min-width: 100%;
@@ -40,7 +40,7 @@
   margin-left: 10rem;
 }
 
-.down_area {
+.Fee_down_area {
   position: inherit;
 
   min-width: 100%;
@@ -58,7 +58,7 @@
   background: #fff;
 }
 
-.right_area {
+.Fee_right_area {
   display: flex;
 
   background: #feffff;
@@ -82,11 +82,11 @@
   margin-left: 25px;
 }
 
-.right_area h2 {
+.Fee_right_area h2 {
   margin: 5rem;
 }
 
-.left_area {
+.Fee_left_area {
   display: flex;
 
   position: inherit;
@@ -118,11 +118,19 @@
   font-size: 1.4rem;
 }
 
-.right_area img {
+.th_profileq_fee {
+  /* padding-top: 12px; */
+  /* padding-bottom: 12px; */
+  /* text-align: left; */
+  background-color: #05080c;
+  color: white;
+}
+
+.Fee_right_area img {
   border-radius: 50%;
 }
 
-.Profile_tabelq {
+.Profile_tabel_fee {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 98%;
@@ -130,16 +138,25 @@
   text-align: center;
 }
 
-.th_profileq .td_profileq {
+.th_profileq_fee .td_profileq_fee {
   border: 1px solid #0f0e0e;
   text-align: center;
   padding: 2rem;
 }
 
-.tr_profileq:nth-child(even) {
+.tr_profileq_fee:nth-child(even) {
   background-color: #67b8fa;
 }
-.Profile_tabel {
+.tr_profileq_fee:nth-child(odd) {
+  background-color: #ffffff;
+}
+.tr_profileq_fee:nth-child(even):hover {
+  background-color: #ddd;
+}
+.tr_profileq_fee:nth-child(odd):hover {
+  background-color: #ddd;
+}
+.Profile_tabel_fee {
   /* font-family: arial, sans-serif; */
   border-collapse: collapse;
   width: 98%;
@@ -147,13 +164,13 @@
   height: 25rem;
 }
 
-.th_profile .td_profile {
+.th_profileq_fee .td_profile {
   border: 1px solid #0f0e0e;
   text-align: left;
   padding: 2rem;
 }
 
-.tr_profile:nth-child(even) {
+.tr_profile_fee:nth-child(even) {
   background-color: #67b8fa;
 }
 
@@ -438,3 +455,5 @@ button {
 }
 
 /* Side Profile styling Ended */
+
+/* Styling the tabel started */

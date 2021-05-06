@@ -18,20 +18,26 @@ import Keep from './components/Keep/keep';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import SocialTiles from './components/Support/Social_tiles';
+import SignUp from './components/SignUp/SignUp';
+import LogIn from './components/LogIn/LogIn';
+import Fee from './components/Fees/Fee';
 
 const App = () => {
   return (
     <>
-    <Header />  
      <Router>
+    <Header />  
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Dashboard} />
+        <Route exact path='/' component={Dashboard} />
+        <Route path='/signup' component={SignUp} />
+        <Route path='/login' component={LogIn} />
           <Route path='/aboutus' component={AboutUs} />
-          <Route path='/calender' component={Calender} />
+          <Route path='/calender' component={Calender} /> 
           <Route path='/profile' component={Profile} />
           <Route path='/result' component={Result} />
           <Route path='/settings' component={Settings} />
+          <Route path='/fee' component={Fee} />
           <Route path='/support' component={Support} />
           <Route path='/todo' component={TodoMaterial} />
           <Route path='/keep' component={Keep} />
@@ -44,15 +50,6 @@ const App = () => {
 
 
 
-      {/* <Header /> */}
-      {/* <Dashboard /> */}
-        {/* <Navbar /> */}
-        {/* <Switch> */}
-          {/* <Route exact path="/" component={Dashboard} /> */}
-          {/* <Route  path="/aboutus" component={AboutUs} /> */}
-          {/* <Route  path="/Assignment" component={Assignment} /> */}
-        {/* </Switch> */}
-      {/* <Footer /> */}
     </>
   );
 }

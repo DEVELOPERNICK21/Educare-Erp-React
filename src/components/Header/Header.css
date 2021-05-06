@@ -84,6 +84,10 @@ header label span {
     display: none;
   }
 
+  h4 {
+    text-decoration: none;
+  }
+
   .user-wrapper {
     display: flex;
 

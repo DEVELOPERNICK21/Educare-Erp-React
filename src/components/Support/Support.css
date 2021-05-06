@@ -27,7 +27,8 @@ section {
 
 .container .contactInfo {
   position: absolute;
-  top: 40px;
+  top: 20px;
+  bottom: 20px;
   width: 350px;
   height: 90%;
   background: #050505;

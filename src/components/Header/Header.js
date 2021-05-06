@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink,Route,Switch } from "react-router-dom";
 import Acedmics from "../Assignment/Assignment"
 import Profile from "../Profile/Profile";
+import SignUp from "../SignUp/SignUp";
 import "./Header.css";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import profileImg from "./img/profile.jpg";
@@ -58,22 +59,26 @@ const Header = () => {
               </a>
 
               <div className='link_content'>
-                <a className='link' href={Acedmics}>
+                {/* <a className='link' href={Acedmics}>
                   Home
-                </a>
+                </a> */}
+
                 <a className='link' href={Profile}>
                   Profile
                 </a>
                 <a className='link' href={Profile}>
                   Acedmic
                 </a>
+                <Link to={'/signup'}>
+                  LogOut
+                  </Link>
               </div>
             </div>
             <div className='headerName'>
-              <Link to={'./acedmics'}>
+              <Link to={'/profile'}>
                 <h4>Nick Kubde</h4>
+                </Link>
                 <small>Super Admin</small>
-              </Link>
             </div>
 
           </div>

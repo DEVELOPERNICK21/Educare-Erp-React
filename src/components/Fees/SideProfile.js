@@ -6,14 +6,14 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-const SideProfile = () => {
+const FeeProfile = () => {
   return (
     <>
   <div className="side_card-header">
     <div className="side_pic">
       <img src={MainProfile} alt="side_profile_image"  />
     </div>
-    <div className="side_profile_name">Nick Kubde</div>
+    <div className="side_profile_name">John Doe</div>
     <div className="side_profile_desc">Developer &amp; Designer</div>
     <div className="side_profile_sm">
     <a href="#" className="facebook"><FacebookIcon /></a>
@@ -51,4 +51,4 @@ const SideProfile = () => {
   );
 };
 
-export default SideProfile;
+export default FeeProfile;
