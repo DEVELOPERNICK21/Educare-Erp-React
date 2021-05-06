@@ -5,9 +5,11 @@ const PersonalInfo = () =>
     return(
         <>
             <div className='contactForm'>
-              <h2>Personal Details</h2>
+              <h2>Other Details</h2>
               <div className='formBox'>
-                <div className='inputBox w50'>
+
+              <h3>No Data is Avilable to display</h3>
+                {/* <div className='inputBox w50'>
                   <span>Mothers Name</span>
                   <h2>Kalpana Kubde</h2>
                 </div>
@@ -55,7 +57,7 @@ const PersonalInfo = () =>
                 <div className='inputBox w50'>
                   <span>Category</span>
                   <h2>OBC</h2>
-                </div>
+                </div> */}
               </div>
             </div>
 

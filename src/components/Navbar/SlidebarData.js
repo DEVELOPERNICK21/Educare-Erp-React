@@ -28,7 +28,7 @@ const SidebarData = [
         page: {Dashboard}
     },  
     {
-        title: 'profile',
+        title: 'Profile',
         path: '/profile',
         icon:<AiIcons.AiOutlineUser size={25} />,
         cName: 'nav-item',
@@ -92,7 +92,7 @@ const SidebarData = [
     },
     {
         title: 'About Us',
-        path: '/AboutUs',
+        path: '/aboutus',
         icon:<VscIcons.VscHeart size={25} />,
         cName: 'nav-item',
         page: {AboutUs}

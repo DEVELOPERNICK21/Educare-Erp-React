@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Fee.css";
 import FeeProfile from './SideProfile';
 import FeeStatus from "./FeeComponent";
+import FeeChart from "./FeeChart";
 
 const Fee = () => 
 {
@@ -14,7 +15,7 @@ const Fee = () =>
         </div>
         <div className='Fee_down_area'>
           <div className='Fee_right_area'>
-                   <FeeProfile />
+                   <FeeChart />
           </div>
           <div className='Fee_left_area'>
                 <FeeStatus />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AcedmicInfo = () =>
+const FeeInfo = () =>
 {
     return(
         <>
@@ -60,4 +60,4 @@ const AcedmicInfo = () =>
     );
 }
 
-export default AcedmicInfo;
+export default FeeInfo;

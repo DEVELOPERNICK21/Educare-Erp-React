@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Fee.css";
 import BasicInfo from './Basic'
 import PersonalInfo from './Personalinfo'
-import AcedmicInfo from "./AcedmicInfo";
+import FeeInfo from "./AcedmicInfo";
 
 const FeeStatus = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -20,18 +20,13 @@ const FeeStatus = () => {
           >
             Fee
           </button>
-          <button
+          {/* <button
             className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
             onClick={() => toggleTab(2)}
           >
-            Personal Info
-          </button>
-          <button
-            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(3)}
-          >
-            Acedmic Info
-          </button>
+            Other 
+          </button> */}
+          
 
          
         </div>
@@ -42,27 +37,18 @@ const FeeStatus = () => {
               toggleState === 1 ? "content  active-content" : "content"
             }
           >
-         <AcedmicInfo />
-
-
-
+         <FeeInfo />
           </div>
 
-          <div
+          {/* <div
             className={
               toggleState === 2 ? "content  active-content" : "content"
             }
           >
            <PersonalInfo />
-          </div>
+          </div> */}
 
-          <div
-            className={
-              toggleState === 3 ? "content  active-content" : "content"
-            }
-          >
-             <BasicInfo />
-          </div>
+          
           
         </div>
       </div>

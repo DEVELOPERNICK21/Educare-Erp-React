@@ -5,6 +5,8 @@ import { IconContext } from 'react-icons';
 import { Redirect } from "react-router-dom";
 import './Navbar.css';
 
+import {motion} from 'framer-motion'
+
 const Navbar = () => {
 
   function toggleSidebar()
@@ -12,6 +14,15 @@ const Navbar = () => {
     const sideBar = document.querySelector(".navbar");
 
     sideBar.classList.toggle("active");
+  }
+
+
+  const svgVariants = {
+    hidden: {rotate: -180},
+    visible: {
+      rotate:0,
+      transition:{duration:1}
+    }
   }
   return (
     <>
@@ -62,7 +73,11 @@ const Navbar = () => {
               <a href="#" class="nav-link">
 
 
-                <svg
+                <motion.svg
+
+                variants={svgVariants}
+                initial="hidden"
+                animate="visible"
                   width="54px" height="54px"
                   class="theme-icon"
                   id="darkIcon"
@@ -131,7 +146,7 @@ const Navbar = () => {
                       class="fa-primary"
                     ></path>
                   </g>
-                </svg>
+                </motion.svg>
                 <span class="link-text">EDUCARE</span>
               </a>
             </li>

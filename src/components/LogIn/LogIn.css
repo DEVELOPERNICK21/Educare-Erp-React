@@ -201,3 +201,28 @@
     line-height: 25px;
   }
 }
+
+/* Animation started */
+.wrapperLogin::before {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+/* Animation Ended */

@@ -1,0 +1,128 @@
+.AboutUSMain {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  position: inherit;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.wrapperAbout {
+  padding: 50px 25px 0;
+
+  /* max-width: 668px; */
+
+  width: 100%;
+
+  margin: auto;
+}
+
+.AboutUs_cover {
+  width: 40%;
+
+  margin-left: 12rem;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 52px;
+}
+
+.wrapperAbout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0rem;
+  margin-top: 5rem;
+  right: 0;
+  background-size: 40rem;
+  background-image: url("./Images/aboutus.svg");
+  background-position: right, left;
+  /* background-size: cover; */
+  background-repeat: no-repeat no-repeat;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.wrapperAbout .Headeline {
+  text-align: center;
+
+  padding-bottom: 48px;
+}
+
+.wrapperAbout .Headeline h1 {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  line-height: 52px;
+}
+
+.wrapperAbout .Explore {
+  color: #000;
+
+  border-top: 1px solid rgb(238, 225, 225);
+
+  padding-top: 20px;
+
+  text-align: center;
+}
+
+.wrapperAbout .Explore a {
+  color: rgb(255, 154, 123);
+}
+
+@media (max-width: 1030px) {
+  .wrapperAbout .wrapperAbout::before {
+    left: -25%;
+
+    min-height: 60vh;
+
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapperAbout {
+    max-width: 550px;
+  }
+
+  .wrapperAbout .Headeline h1 {
+    font-size: 22px;
+
+    line-height: 25px;
+  }
+}
+
+/* Animation started */
+.wrapperAbout::before {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+/* Animation Ended */
