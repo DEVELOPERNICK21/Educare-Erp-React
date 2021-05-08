@@ -69,15 +69,15 @@ const SidebarData = [
         cName: 'nav-item',
         page: {TodoMaterial}
     },
+    // {
+    //     title: 'Calender',
+    //     path: '/Calender',
+    //     icon:<VscIcons.VscCalendar size={25} />,
+    //     cName: 'nav-item',
+    //     page: {Calender}
+    // },
     {
-        title: 'Calender',
-        path: '/Calender',
-        icon:<VscIcons.VscCalendar size={25} />,
-        cName: 'nav-item',
-        page: {Calender}
-    },
-    {
-        title: 'Fees',
+        title: 'Finance',
         path: '/fee',
         icon:<IoIcons.IoCashOutline size={25} />,
         cName: 'nav-item',
@@ -97,13 +97,13 @@ const SidebarData = [
         cName: 'nav-item',
         page: {AboutUs}
     },
-    {
-        title: 'Settings',
-        path: '/Settings',
-        icon:<IoIcons.IoSettingsOutline size={25} />,
-        cName: 'nav-item',
-        page: {Settings}
-    },
+    // {
+    //     title: 'Settings',
+    //     path: '/Settings',
+    //     icon:<IoIcons.IoSettingsOutline size={25} />,
+    //     cName: 'nav-item',
+    //     page: {Settings}
+    // },
 ]
 
 export default SidebarData;

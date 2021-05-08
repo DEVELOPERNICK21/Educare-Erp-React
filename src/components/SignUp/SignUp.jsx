@@ -3,6 +3,7 @@ import Button from "@material-ui/core/Button";
 import DoneAllIcon from "@material-ui/icons/DoneAll";
 import { Link } from "react-router-dom";
 import './Signup.css';
+import anim from './Images/Blogging.json';
 
 
 
@@ -37,6 +38,7 @@ const SignUp = () => {
                                     Already have an account?   <Link to={'/LogIn'}>
                   LogIn
                   </Link>
+
                                 </div>
                             </div>
 

@@ -438,3 +438,44 @@ button {
 }
 
 /* Side Profile styling Ended */
+
+/* adding hover effect on the acedmic Info tabel Started */
+
+.th_profileq {
+  background-color: #000000;
+
+  color: rgb(255, 255, 255);
+}
+
+.th_profile {
+  background-color: #000000;
+
+  color: rgb(255, 255, 255);
+}
+
+.tr_profileq:nth-child(even) {
+  background-color: #67b8fa;
+}
+.tr_profileq:nth-child(odd) {
+  background-color: #ffffff;
+}
+.tr_profileq:nth-child(even):hover {
+  background-color: #ddd;
+}
+.tr_profileq:nth-child(odd):hover {
+  background-color: #ddd;
+}
+
+.tr_profile:nth-child(even) {
+  background-color: #67b8fa;
+}
+.tr_profile:nth-child(odd) {
+  background-color: #ffffff;
+}
+.tr_profile:nth-child(even):hover {
+  background-color: #ddd;
+}
+.tr_profile:nth-child(odd):hover {
+  background-color: #ddd;
+}
+/* adding hover effect on the acedmic Info tabel End */

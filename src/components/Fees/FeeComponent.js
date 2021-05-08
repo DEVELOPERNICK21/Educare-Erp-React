@@ -15,7 +15,7 @@ const FeeStatus = () => {
       <div className='tab_container_profile'>
         <div className='bloc-tabs_profile'>
           <button
-            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+            className={toggleState === 1 ? "fee_tabs fee_active-tabs" : "tabs"}
             onClick={() => toggleTab(1)}
           >
             Fee
@@ -27,7 +27,6 @@ const FeeStatus = () => {
             Other 
           </button> */}
           
-
          
         </div>
 

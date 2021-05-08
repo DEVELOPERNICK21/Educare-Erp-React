@@ -33,7 +33,8 @@ const TodoMaterial = () => {
     <>
       <div className='TodoMain'>
         <div className='upperTodo'>
-          {/* <h1 className='hone'>TODO LIST</h1> */}
+          <h1 >TODO</h1>
+          <h3 >Add Your Task Here</h3>
           <div className="addTask">
           <input
             className='addNotesTodoInputTitle'

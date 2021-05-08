@@ -7,7 +7,7 @@ const AcedmicInfo = () =>
             <h2>Qualification Info</h2>
 
 <table className='Profile_tabelq'>
-  <tr className='tr_profileq'>
+  <tr className=' '>
     <th className='th_profileq'>Sr. No.</th>
     <th className='th_profileq'>Qualification</th>
     <th className='th_profileq'>Year Of Passing</th>

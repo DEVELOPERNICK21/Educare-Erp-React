@@ -5,6 +5,14 @@
 
   width: 100%;
 
+  background-image: url("../Images/todo.svg");
+
+  background-repeat: no-repeat no-repeat;
+
+  background-position: bottom;
+
+  background-position-x: right;
+
   margin-top: 5.4rem;
 
   display: flex;
@@ -19,6 +27,31 @@
 
   align-content: center;
 }
+
+/* Animation started */
+.TodoMain::before {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+/* Animation Ended */
 
 .upperTodo {
   height: 20vh;
@@ -72,6 +105,15 @@
   overflow: scroll;
 
   padding-top: 10%;
+}
+
+.DownTodo::-webkit-scrollbar {
+  display: none;
+}
+
+.DownTodo {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .hone {

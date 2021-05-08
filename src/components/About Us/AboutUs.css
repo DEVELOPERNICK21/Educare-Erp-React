@@ -44,7 +44,7 @@
   margin-top: 5rem;
   right: 0;
   background-size: 40rem;
-  background-image: url("./Images/aboutus.svg");
+  background-image: url("../Images/aboutus.svg");
   background-position: right, left;
   /* background-size: cover; */
   background-repeat: no-repeat no-repeat;

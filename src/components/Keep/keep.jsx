@@ -39,6 +39,8 @@ const Keep = (props) => {
             <div className='main_keep' onDoubleClick={CloseExpand} >
             
                 <div className="upperKeep">
+                <h1>Keep</h1>
+                <h3>Write and add to remember</h3>
                 <KeepNote noteHere={addNote} first={Expand} second={CloseExpand} third={show} />
                 </div>
                

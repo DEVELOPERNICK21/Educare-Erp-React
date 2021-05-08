@@ -16,9 +16,6 @@ const Fee = () =>
         <div className='Fee_down_area'>
           <div className='Fee_right_area'>
                    <FeeChart />
-                   <div className='images'>
-
-                   </div>
           </div>
           <div className='Fee_left_area'>
                 <FeeStatus />

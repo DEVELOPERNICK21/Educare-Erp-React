@@ -1,5 +1,12 @@
 .main_keep {
-  background-color: #f4f5f7;
+  /* background-color: #f4f5f7; */
+  background-image: url("../Images/keep.svg");
+
+  background-repeat: no-repeat no-repeat;
+
+  background-position: bottom;
+
+  background-position-x: right;
 
   height: 100vh;
 
@@ -72,6 +79,15 @@
   overflow: scroll;
 
   padding-top: 10%;
+}
+
+.notesstyler::-webkit-scrollbar {
+  display: none;
+}
+
+.notesstyler {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Starting styling off add Notes Area   */

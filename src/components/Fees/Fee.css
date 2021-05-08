@@ -53,7 +53,7 @@
 
   display: flex;
 
-  flex-direction: row;
+  flex-direction: row-reverse;
 
   background: #fff;
 }
@@ -91,7 +91,7 @@
 }
 
 /* Animation started */
-.Fee_right_area::before {
+.Fee_right_area {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -208,7 +208,7 @@
 }
 
 .lg-btn {
-  position: relative;
+  position: in;
   display: inline-block;
   padding: 5px 5px;
   margin: 0 0;
@@ -253,41 +253,42 @@
   display: flex;
 }
 
-.tabs {
+.fee_tabs {
   padding: 15px;
   text-align: center;
   width: 10%;
   background: rgba(128, 128, 128, 0.075);
   cursor: pointer;
-  border-bottom: 1px solid rgb(77, 138, 250);
-  box-sizing: content-box;
-  border: none;
-  display: inline-block;
-  background-color: black;
-  color: #ffffff;
   font-size: 1.2rem;
-  transition: 0.5s;
+  color: #ffffff;
+  border: none;
   margin: 3px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  border-bottom: 1px solid rgb(77, 138, 250);
+  background-color: black;
+  transition: 0.5s;
+  /*box-sizing: content-box;
+  display: inline-block;
+  */
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
 }
 
-.tabs:hover {
+/* .fee_tabs:hover {
   background: #00c6ff;
   color: #050801;
   box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
     0 0 200px #00c6ff;
-}
-.tabs:not(:last-child) {
+} */
+.fee_tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
 
-.active-tabs {
+.fee_active-tabs {
   background: white;
   color: #000000;
   border-bottom: 1px solid transparent;
 }
 
-.active-tabs::before {
+.fee_active-tabs::before {
   content: "";
   display: block;
   position: absolute;
