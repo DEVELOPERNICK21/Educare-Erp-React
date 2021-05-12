@@ -1,6 +1,6 @@
 import React from "react";
 import "./Profilecard.css"
-import Profile from './img/profile.jpg';
+import Profile from '../Images/profile.png';
 import backg from './img/bg.jpg';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';

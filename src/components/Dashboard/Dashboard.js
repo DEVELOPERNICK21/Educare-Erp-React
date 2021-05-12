@@ -10,7 +10,7 @@ import { Redirect } from "react-router-dom";
 import Cards from "./Cards";
 // import Charts from './charts';
 import "./Dashboard.css";
-import Graphs from "./Graph";
+// import Graphs from "./Graph";
 import Google_chart from "./Google_Chart";
 import Google_graphs from "./Google_graphs";
 import Google_chart2 from "./google_chart2";

@@ -29,7 +29,13 @@ const SignUp = () => {
                                     <input type='email' placeholder='Email' required='' />
                                 </div>
                                 <div className='form_group'>
+                                    <input type='text' placeholder='Phone Number' required='' />
+                                </div>
+                                <div className='form_group'>
                                     <input type='password' placeholder='Password' required='' />
+                                </div>
+                                <div className='form_group'>
+                                    <input type='password' placeholder='Confirm Password' required='' />
                                 </div>
                                 <Button variant='contained' className="btn" color='disable'>
                                     Sign Up
