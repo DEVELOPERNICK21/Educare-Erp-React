@@ -77,7 +77,7 @@ const SidebarData = [
     //     page: {Calender}
     // },
     {
-        title: 'Finance',
+        title: 'Fee',
         path: '/fee',
         icon:<IoIcons.IoCashOutline size={25} />,
         cName: 'nav-item',

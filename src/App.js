@@ -29,7 +29,7 @@ const App = () => {
     <Header />  
       <Navbar />
       <Switch>
-        <Route exact path='/' component={Dashboard} />
+        <Route exact path='/' ><Dashboard /> </Route>
         <Route path='/signup' component={SignUp} />
         <Route path='/login' component={LogIn} />
           <Route path='/aboutus' component={AboutUs} />
