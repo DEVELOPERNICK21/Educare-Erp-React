@@ -1,5 +1,5 @@
 import React from "react";
-import MainProfile from "../Images/profile.png";
+import MainProfile from "../Images/profile.jpg";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';

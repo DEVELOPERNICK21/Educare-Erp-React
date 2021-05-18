@@ -52,7 +52,7 @@ const SignUp = () => {
     if(res.status === 422 || !data ){
         window.alert("invalid Registraion");
         console.log("invalid Registraion");
-    }else{
+    }else{  
         window.alert("Successfully Registraion");
         console.log("Successfully Registraion");
 

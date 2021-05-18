@@ -11,11 +11,12 @@ const Google_graphs = () =>
   chartType="Bar"
   loader={<div>Loading Chart</div>}
   data={[
-    ['Year', 'Sales', 'Expenses', 'Profit'],
-    ['2014', 1000, 400, 200],
-    ['2015', 1170, 460, 250],
-    ['2016', 660, 1120, 300],
-    ['2017', 1030, 540, 350],
+    ['Month', 'Attendance', 'Present Days', 'Absent Days','Leave','Half Day' ],
+    ['July', '42 %', 23, 3, 1,0],
+    ['Aug', "49 %", 18, 5, 2,3],
+    ['Sep', "66 %", 19, 4, 1,0],
+    ['Oct', "72 %", 24, 1, 1,1],
+    ['Nov', "90 %", 13, 7, 1,2],
   ]}
   options={{
     
@@ -25,8 +26,8 @@ const Google_graphs = () =>
     // },
     // Material design options
     chart: {
-      title: 'Company Performance',
-      subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+      title: 'Student Performance',
+      subtitle: 'Class, Attendance, and Exam: 2020-2021',
     },
     
   }}

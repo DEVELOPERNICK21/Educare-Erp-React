@@ -41,19 +41,19 @@ const SidebarData = [
         cName: 'nav-item',
         page: {Acedmics}
     },
-    {
-        title: 'Time Table',
-        path: '/Timetable',
-        icon:<RiIcons.RiTableLine size={25} />,
-        cName: 'nav-item',
-        page: {TodoMaterial}
-    },
+    // {
+    //     title: 'Time Table',
+    //     path: '/Timetable',
+    //     icon:<RiIcons.RiTableLine size={25} />,
+    //     cName: 'nav-item',
+    //     page: {TodoMaterial}
+    // },
     {
         title: 'Result',
         path: '/Result',
         icon:<VscIcons.VscGraph size={25} />,
         cName: 'nav-item',
-        page: {AboutUs}
+        page: {Result}
     },
     {
         title: 'Keep',

@@ -303,7 +303,7 @@ button {
 .side_pic {
   display: inline-block;
   padding: 8px;
-  background: linear-gradient(130deg, #080808, #00aff5);
+  background: linear-gradient(130deg, #9300f5, #00ccf0);
   margin: auto;
   border-radius: 50%;
   background-size: 200% 200%;

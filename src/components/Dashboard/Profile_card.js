@@ -1,7 +1,6 @@
 import React from "react";
 import "./Profilecard.css"
-import Profile from '../Images/profile.png';
-import backg from './img/bg.jpg';
+import Profile from '../Images/profile.jpg';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -15,7 +14,7 @@ const ProfileCard = () => {
 <div className="profile-card">
   <div className="card-header">
     <div className="pic">
-      <img src={Profile}  alt="Card_image" />
+      <img src={Profile}  alt="Profile_image" />
     </div>
     <div className="name">Nick Kubde</div>
     <div className="pc_details">

@@ -11,11 +11,11 @@ const Google_chart2 = () =>
     loader={<div>Loading Chart</div>}
     data={[
       ['Task', 'Hours per Day'],
-      ['NIck', 11],
-      ['Eat', 2],
-      ['Commute', 2],
-      ['Watch TV', 2],
-      ['Sleep', 7],
+      ['Present', 62],
+      ['Absent', 22],
+      ['Leave', 5],
+      ['Half Day', 7],
+      ['Event', 4],
     ]}
     options={{
       title: 'My Daily Activities',

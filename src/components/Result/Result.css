@@ -1,4 +1,4 @@
-.Fee_area {
+.Result_area {
   display: flex;
 
   flex-direction: column;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-.Fee_upper_area {
+.Result_upper_area {
   position: inherit;
 
   min-width: 100%;
@@ -40,7 +40,7 @@
   margin-left: 10rem;
 }
 
-.Fee_down_area {
+.Result_down_area {
   position: inherit;
 
   min-width: 100%;
@@ -58,12 +58,12 @@
   background: #fff;
 }
 
-.Fee_right_area {
+.Result_right_area {
   display: flex;
 
   /* background: #feffff; */
 
-  background-image: url("./img/card.svg");
+  background-image: url("../Images/result.svg");
 
   background-repeat: no-repeat no-repeat;
 
@@ -91,7 +91,7 @@
 }
 
 /* Animation started */
-.Fee_right_area {
+.Result_right_area {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -115,11 +115,11 @@
 
 /* Animation Ended */
 
-.Fee_right_area h2 {
+.Result_right_area h2 {
   margin: 5rem;
 }
 
-.Fee_left_area {
+.Result_left_area {
   display: flex;
 
   position: inherit;
@@ -159,7 +159,7 @@
   color: white;
 }
 
-.Fee_right_area img {
+.Result_right_area img {
   border-radius: 50%;
 }
 
@@ -267,17 +267,17 @@
   background-color: black;
   transition: 0.5s;
   /*box-sizing: content-box;
-  display: inline-block;
-  */
+    display: inline-block;
+    */
   /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
 }
 
 /* .fee_tabs:hover {
-  background: #00c6ff;
-  color: #050801;
-  box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
-    0 0 200px #00c6ff;
-} */
+    background: #00c6ff;
+    color: #050801;
+    box-shadow: 0 0 5px #00c6ff, 0 0 25px #00c6ff, 0 0 50px #00c6ff,
+      0 0 200px #00c6ff;
+  } */
 .fee_tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
@@ -335,4 +335,46 @@ button {
 
 /* Ending adding style for tabs on right area */
 
-/* Styling the tabel started */
+.select_result {
+  width: 100%;
+
+  padding: 0.5rem;
+
+  font-weight: 300;
+
+  font-size: 1.5rem;
+}
+
+.assignment_tabel {
+  width: 100%;
+
+  padding: 1rem;
+
+  font-weight: 500;
+
+  font-size: 1.1rem;
+}
+
+.assignment_tabel h2 {
+  width: 100%;
+
+  padding-bottom: 1rem;
+
+  font-weight: 500;
+
+  font-size: 1.5rem;
+}
+
+.select_result select {
+  color: rgb(29, 29, 29);
+
+  width: 10rem;
+
+  height: 2.2rem;
+
+  margin: 2rem;
+
+  font-size: 1.5rem;
+
+  border: none;
+}

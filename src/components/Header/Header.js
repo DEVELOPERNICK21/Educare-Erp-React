@@ -5,7 +5,7 @@ import Profile from "../Profile/Profile";
 import SignUp from "../SignUp/SignUp";
 import "./Header.css";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import profileImg from "../Images/profile.png";
+import profileImg from "../Images/profile.jpg";
 
 const Header = () => {
   const time = new Date().toLocaleTimeString();

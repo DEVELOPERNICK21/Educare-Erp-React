@@ -9,15 +9,15 @@ const Google_chart = () =>
     chartType="PieChart"
     loader={<div>Loading Chart</div>}
     data={[
-      ['Task', 'Hours per Day'],
-      ['NIck', 11],
-      ['Eat', 2],
-      ['Commute', 2],
-      ['Watch TV', 2],
-      ['Sleep', 7],
+      ['Subject', 'Performance'],
+      ['Engineering Mathematics', 56],
+      ['Data Structures and Applications',80 ],
+      ['Analog and Digital Electronics', 80],
+      ['Computer Organization', 30],
+      ['Software Engineering', 35],
     ]}
     options={{
-      title: 'My Daily Activities',
+      title: 'Subject Wise Performance',
       // Just add this option
       pieHole: 0.4,
     }}
