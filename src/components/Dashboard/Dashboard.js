@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, createContext } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Calenders from "../Calender/Calendar";
@@ -11,9 +11,17 @@ import Google_chart from "./Google_Chart";
 import Google_graphs from "./Google_graphs";
 import Google_chart2 from "./google_chart2";
 
-const Dashboard = () => {
+
+// creating context constant
+const firstName = createContext();
+const phone = createContext();
+const email = createContext();
+
+
+const Dashboard = (props) => {
 
   const history = useHistory();
+  const [userData, setUserData] = useState({});
   
   const callMainPage = async () => {
 
@@ -29,6 +37,7 @@ const Dashboard = () => {
         
         const data = await res.json();
         console.log(data);
+        setUserData(data);
 
         if(!res.status === 200) {
           const error = new Error(res.error);
@@ -70,7 +79,13 @@ const Dashboard = () => {
             <Google_chart2 />
           </div>
           <div className='profile_rowThird'>
-            <ProfileCard />
+          <firstName.Provider value={userData.name} >
+            <phone.Provider value={userData.phone} >
+              <email.Provider value={userData.email} >
+                <ProfileCard  />
+              </email.Provider>
+            </phone.Provider>
+          </firstName.Provider>
           </div>
           <div className="calender_rowThird">
             <Calenders />
@@ -83,3 +98,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+export {firstName, phone,email};

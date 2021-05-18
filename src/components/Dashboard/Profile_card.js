@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Profilecard.css"
 import Profile from '../Images/profile.jpg';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -6,9 +6,14 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import {firstName,phone,email} from "./Dashboard"
 
 
-const ProfileCard = () => {
+const ProfileCard = (props) => {
+
+  const fname = useContext(firstName);
+  const mobNo = useContext(phone);
+  const e_mail = useContext(email);
   return (
     <>
 <div className="profile-card">
@@ -16,13 +21,13 @@ const ProfileCard = () => {
     <div className="pic">
       <img src={Profile}  alt="Profile_image" />
     </div>
-    <div className="name">Nick Kubde</div>
+    <div className="name">{fname}</div>
     <div className="pc_details">
     <div className="desc">Developer &amp; Designer</div>
     <br/>
-    <div className="desc">nikhilkubde21@gmail.com</div>
+    <div className="desc">{e_mail}</div>
     <br/>
-    <div className="desc">+91 8827411901</div>
+    <div className="desc">+91 {mobNo}</div>
     <br/>
     <div className="desc">City- Bhopal</div>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './Support.css'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
@@ -12,6 +12,42 @@ import CheckIcon from '@material-ui/icons/Check';
 import SocialTiles from '../Support/Social_tiles';
 
 const Support = () => {
+
+  const [userData, setUserData] = useState({});
+  
+  const supportPage = async () => {
+
+    
+    try{
+      const res = await fetch('/supportbackend',{
+        method: "GET",
+        headers: {
+            "Content-Type" : "application/json"
+        },
+     } );
+        
+        const data = await res.json();
+        console.log(data);
+        setUserData(data);
+
+        if(!res.status === 200) {
+          const error = new Error(res.error);
+          throw error;
+        }
+
+    }
+    catch(err)
+    {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => 
+  {
+    supportPage();
+  },[]);
+
+
     return (
         <>
             <section>
@@ -56,22 +92,34 @@ const Support = () => {
                         <h2>Send Message</h2>
                         <div className="formBox">
                             <div className="inputBox w50">
-                                <input type="text" required />
+                                <input 
+                                type="text" 
+                                required 
+                                value={userData.name}  />
                                 <span>First Name</span>
                             </div>
 
                             <div className="inputBox w50">
-                                <input type="text" required />
+                                <input 
+                                type="text" 
+                                required 
+                                value={userData.name} />
                                 <span>Last Name</span>
                             </div>
 
                             <div className="inputBox w50">
-                                <input type="text" required />
+                                <input 
+                                type="text" 
+                                required 
+                                value={userData.email} />
                                 <span>Email Address</span>
                             </div>
 
                             <div className="inputBox w50">
-                                <input type="text" required />
+                                <input 
+                                type="text" 
+                                required 
+                                value={userData.phone} />
                                 <span>Mobile Number</span>
                             </div>
 
