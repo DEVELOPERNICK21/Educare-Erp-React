@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link, NavLink,Route,Switch } from "react-router-dom";
 import Acedmics from "../Assignment/Assignment"
 import Profile from "../Profile/Profile";
@@ -6,6 +6,7 @@ import SignUp from "../SignUp/SignUp";
 import "./Header.css";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import profileImg from "../Images/profile.jpg";
+import Logout from "../Logout/Logout";
 
 const Header = () => {
   const time = new Date().toLocaleTimeString();
@@ -17,6 +18,42 @@ const Header = () => {
     setCurTime(ntime);
   };
   setInterval(Uptime, 1000);
+
+
+  
+  const Logout = async () => {
+
+    
+    try{
+      const res = await fetch('/logout',{  
+        method: "GET",
+        headers: {
+            Accept:"application/json",
+            "Content-Type" : "application/json"
+        },
+        credentials: "include" } );
+        
+        
+        const data = await res.json();
+        console.log(data);
+
+        if(!res.status === 200) {
+          const error = new Error(res.error);
+          throw error;
+        }
+
+    }
+    catch(err)
+    {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => 
+  {
+    Logout();
+  },[]);
+
 
   return (
     <>
@@ -69,9 +106,10 @@ const Header = () => {
                 <a className='link' href={Profile}>
                   Acedmic
                 </a>
-                <Link to={'/signup'}>
-                  LogOut
-                  </Link>
+                <NavLink exact to="/login" >
+                  {/* <Logout /> */}
+                  Logout
+                  </NavLink>
               </div>
             </div>
             <div className='headerName'>

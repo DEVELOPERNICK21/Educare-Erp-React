@@ -7,7 +7,7 @@ const Cards = () =>
 {
     const [cardcolor, setCardColor] = useState("#fff");
 
-    const  attendPer = 90 ;
+    const  attendPer = 80 ;
     
 
     return(

@@ -20,6 +20,7 @@ import Header from './components/Header/Header';
 import SocialTiles from './components/Support/Social_tiles';
 import SignUp from './components/SignUp/SignUp';
 import LogIn from './components/LogIn/LogIn';
+import Logout from './components/Logout/Logout';
 import Fee from './components/Fees/Fee';
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
           <Route path='/keep' component={Keep} />
           <Route path='/acedmics' component={Acedmics} />
           <Route path='/socialtiles' component={SocialTiles} />
+          <Route path='/logout'>  <Logout/> </Route> 
       </Switch>
     </Router>
       <Footer />

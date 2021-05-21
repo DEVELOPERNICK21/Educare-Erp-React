@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Profile.css";
-import SideProfile from './SideProfile';
+import { useHistory } from "react-router-dom";
+import SideProfile from "./SideProfile";
 import TabProfile from "./TabComponent";
 
-const Profile = () => 
-{
-    // const [toggleState, setToggleState] = useState();
+const Profile = () => {
+  // const [toggleState, setToggleState] = useState();
 
-    // const toggleTab = (index) => {
-    //   setToggleState(index);
-    // };
+  // const toggleTab = (index) => {
+  //   setToggleState(index);
+  // };
+ 
+
   return (
     <>
       <div className='profile_area'>
@@ -18,11 +20,10 @@ const Profile = () =>
         </div>
         <div className='down_area'>
           <div className='right_area'>
-                   <SideProfile />
+            <SideProfile />
           </div>
           <div className='left_area'>
-                <TabProfile />
-           
+            <TabProfile />
           </div>
         </div>
       </div>

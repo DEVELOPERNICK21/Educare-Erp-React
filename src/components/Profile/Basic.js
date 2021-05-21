@@ -1,7 +1,40 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import { useHistory } from "react-router-dom";
 
 const BasicInfo = () =>
 {
+  const history = useHistory();
+
+  const [userData, setUserData] = useState({});
+
+  const callProfileData = async () => {
+    try {
+      const res = await fetch("/index", {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      });
+
+      const data = await res.json();
+      console.log(data);
+      setUserData(data);
+
+      if (!res.status === 200) {
+        const error = new Error(res.error);
+        throw error;
+      }
+    } catch (err) {
+      console.log(err);
+      history.push("./login");
+    }
+  };
+
+  useEffect(() => {
+    callProfileData();
+  }, []);
     return(
         <>
               <div className='contactForm'>
@@ -10,7 +43,7 @@ const BasicInfo = () =>
             <div className='formBox'>
               <div className='inputBox w50'>
                 <span>First Name</span>
-                <h2>Nick Kubde</h2>
+                <h2>{userData.name}</h2>
               </div>
 
               <div className='inputBox w50'>
@@ -35,7 +68,7 @@ const BasicInfo = () =>
 
               <div className='inputBox w50'>
                 <span>Email Address</span>
-                <h2>nikhilkubde21@gmail.com</h2>
+                <h2>{userData.email}</h2>
               </div>
 
               <div className='inputBox w50'>
