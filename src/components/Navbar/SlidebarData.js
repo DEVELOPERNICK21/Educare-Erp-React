@@ -14,6 +14,7 @@ import Profile from '../Profile/Profile';
 import Result from '../Result/Result';
 import Settings from '../Settings/Settings';
 import Support from '../Support/Support';
+import Calenders from '../Calender/Calendar';
 import TodoMaterial from '../Todo/ToDo_Material';
 import Keep from '../Keep/keep';
 
@@ -41,13 +42,13 @@ const SidebarData = [
         cName: 'nav-item',
         page: {Acedmics}
     },
-    // {
-    //     title: 'Time Table',
-    //     path: '/Timetable',
-    //     icon:<RiIcons.RiTableLine size={25} />,
-    //     cName: 'nav-item',
-    //     page: {TodoMaterial}
-    // },
+    {
+        title: 'Time Table',
+        path: '/calender',
+        icon:<RiIcons.RiTableLine size={25} />,
+        cName: 'nav-item',
+        page: {Calenders}
+    },
     {
         title: 'Result',
         path: '/Result',
